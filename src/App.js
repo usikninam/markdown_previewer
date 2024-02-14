@@ -5,7 +5,19 @@ import Preview from './Preview';
 
 function App() {
 
-  const [text, setText] = useState("");
+
+  // a header (H1 size)
+  // a sub header (H2 size)
+  // a link
+  // inline code
+  // a code block
+  // a list item
+  // a blockquote
+  // an image,
+  // bolded text
+  const defaultText = "# Heading\n*italic*\n**bold**\n### heading3\n```code```";
+
+  const [text, setText] = useState(defaultText);
 
   return (
     <div>
