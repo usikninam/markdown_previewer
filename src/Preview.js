@@ -5,8 +5,7 @@ export default function Preview(props) {
 
     return (
         <div id="preview">
-            <h1>Preview component</h1>
-            <div dangerouslySetInnerHTML={{ __html: html }}></div>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
     );
 }
