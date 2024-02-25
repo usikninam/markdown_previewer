@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react'
 import Editor from './Editor';
 import Preview from './Preview';
+import Wrapper from './Wrapper';
 
 function App() {
 
@@ -20,10 +21,20 @@ function App() {
   const [text, setText] = useState(defaultText);
 
   return (
-    <div>
-      <Editor setText={setText} text={text} />
-      <Preview text={text} />
-    </div>
+    <div className="app bg-info container-fluid">
+      <div className="row">
+        <div className="col-md-6">
+          <Wrapper>
+            <Editor setText={setText} text={text} />
+          </Wrapper>
+        </div>
+        <div className="col-md-6">
+          <Wrapper>
+            <Preview text={text} />
+          </Wrapper>
+        </div>
+      </div>
+    </div >
   );
 }
 
