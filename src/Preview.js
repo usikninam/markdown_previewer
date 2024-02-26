@@ -9,6 +9,6 @@ export default function Preview(props) {
     });
 
     return (
-        <div id="preview" class="bg-dark text-white" dangerouslySetInnerHTML={{ __html: marked(props.text) }}></div>
+        <div id="preview" dangerouslySetInnerHTML={{ __html: marked(props.text) }}></div>
     );
 }

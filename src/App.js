@@ -21,7 +21,7 @@ function App() {
   const [text, setText] = useState(defaultText);
 
   return (
-    <div className="app bg-info container-fluid">
+    <div className="app container-fluid">
       <div className="row">
         <div className="col-md-6">
           <Wrapper>
