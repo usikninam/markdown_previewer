@@ -24,12 +24,12 @@ function App() {
     <div className="app container-fluid">
       <div className="row">
         <div className="col-md-6">
-          <Wrapper>
+          <Wrapper componentName={"Editor"}>
             <Editor setText={setText} text={text} />
           </Wrapper>
         </div>
         <div className="col-md-6">
-          <Wrapper>
+          <Wrapper componentName={"Preview"}>
             <Preview text={text} />
           </Wrapper>
         </div>
